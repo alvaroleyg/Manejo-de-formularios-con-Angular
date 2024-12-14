@@ -1,0 +1,33 @@
+<h2>Lista de Proveedores</h2>
+<table>
+    <thead>
+        <tr>
+            <th>CIF</th>
+            <th>Nombre</th>
+            <th>Actividad</th>
+            <th>Dirección</th>
+            <th>Localidad</th>
+            <th>Código Postal</th>
+            <th>Teléfono</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let provider of providers">
+            <td>{{ provider.cif }}</td>
+            <td>{{ provider.name }}</td>
+            <td>{{ provider.activity }}</td>
+            <td>{{ provider.address }}</td>
+            <td>{{ provider.city }}</td>
+            <td>{{ provider.cp }}</td>
+            <td>{{ provider.phone }}</td>
+            <td id="actionButtons">
+                <button id="editButton" [routerLink]="['/edit-provider', provider.cif]">Editar</button>
+                <button id="deleteButton" (click)="deleteProvider(provider.cif)">Eliminar</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<div>
+    <button id="addButton" routerLink="/add-provider">Agregar nuevo proveedor</button>
+</div>

@@ -1,0 +1,27 @@
+{
+  "name": "9513418_alvaroley_proyectofinal",
+  "version": "1.0.0",
+  "description": "Proyecto Final ApiRest Angular NodeJS Express",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ApiRest",
+    "Angular",
+    "NodeJS",
+    "Express"
+  ],
+  "author": "ALG",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  },
+  "dependencies": {
+    "@angular/common": "^18.2.12",
+    "cors": "^2.8.5",
+    "express": "^4.21.1"
+  }
+}
